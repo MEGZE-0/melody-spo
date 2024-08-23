@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <div class="music-player">
+        <video id="video-background" autoplay loop muted></video>
+        
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <input type="text" id="search-input" placeholder="Search for music" style="width: 80%; margin: 0 auto;">
+        <button id="search-button">Search</button>
+        <ul id="search-results"></ul>
+        <ul id="search-history"></ul>
+
+        <img id="artist-image" src="" alt="" class="song-img">
+        <h1 id="song-title">Freeze</h1>
+        <p id="song-artist">Kygo</p>
+
+        <audio id="audio"></audio>
+
+        <input type="range" value="0" id="progress" min="0" max="100">
+
+        <div class="controls">
+            <div id="backward">
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div id="play-pause">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div id="forward">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </div>
+<script src="../js/script.js"></script>
+</body>
+</html>
